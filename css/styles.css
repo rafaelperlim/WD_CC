@@ -12,7 +12,7 @@ footer {
   background-color: #27496d;
   color: #dae1e7;
   font-size: 1rem;
-  line-height: .35;
+  line-height: 0.35;
   max-height: 2.5rem;
   overflow: hidden;
   text-align: center;
@@ -27,17 +27,11 @@ ul {
   max-width: inherit;
 }
 
-.collapse {
-  padding-top: 3.5rem;
-  position: absolute;
-  right: 17%;
-}
-
 .div-author {
   background-color: #dae1e7;
   display: block;
   min-height: 29rem;
-  padding: 4.5rem 17% 0 17%;
+  padding: 4.5rem 17% 0 16%;
   text-align: center;
 }
 .div-author-title {
@@ -60,7 +54,7 @@ ul {
 .div-top {
   background-color: #515585;
   display: block;
-  padding: 12rem 17% 5% 17%;
+  padding: 12rem 17% 5% 16%;
 }
 
 .icon {
@@ -72,11 +66,13 @@ ul {
   max-width: inherit;
 }
 
-.img-top {
+.image-top {
   width: 35vw;
+  margin-left: 16%;
   position: absolute;
-  right: 17%;
+  right: 16%;
   top: 70%;
+  z-index: 1;
 }
 
 .navbar {
@@ -85,24 +81,11 @@ ul {
   height: 5.5rem;
   position: fixed;
   width: 100%;
-  z-index: 2;
-}
-
-.navbar-collapse {
-  -ms-flex-preferred-size: 100%;
-  flex-basis: 100%;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.navbar-nav {
-  display: flex;
+  z-index: 10;
 }
 
 .navbar-brand {
-  left: 17%;
+  left: 16%;
   max-width: 16rem;
   position: relative;
   top: 1rem;
@@ -124,11 +107,30 @@ ul {
 }
 */
 
+.navbar-collapse {
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.navbar-menu {
+  padding-top: 3.5rem;
+  position: absolute;
+  right: 17%;
+}
+
+.navbar-nav {
+  display: flex;
+}
+
 .nav-link {
   color: #dae1e7;
   font-size: 1.25rem;
   font-weight: 400;
-  margin-left: 1.5rem;
+  margin-left: 1.5vw;
   position: relative;
   text-decoration: none;
 }
@@ -139,17 +141,17 @@ ul {
 .text-author {
   color: #515585;
   font-weight: 400;
-  z-index: 1;
+  z-index: 5;
 }
 
 .text-link {
   color: #46b5d1;
-  z-index: 1;
+  z-index: 5;
 }
 .text-link:hover {
   color: #00909e;
   font-weight: 500;
-  z-index: 1;
+  z-index: 5;
 }
 
 .text-top {
@@ -157,7 +159,7 @@ ul {
   font-weight: 400;
   max-width: 25rem;
   padding-top: 7%;
-  z-index: 1;
+  z-index: 5;
   /*position: absolute;
   left: 35vh - 71% - 35rem*/
 }
@@ -169,7 +171,7 @@ ul {
   font-weight: 700;
   letter-spacing: 0.2rem;
   margin: 0;
-  z-index: 1;
+  z-index: 5;
 }
 
 .quote-author {
@@ -177,5 +179,12 @@ ul {
   font-family: 'Saira Semi Condensed', sans-serif;
   font-size: 1.05vw;
   margin: 0;
-  z-index: 1;
+  z-index: 5;
+}
+
+@media screen and (max-width: 1200px) {
+  .icon {display:inline;}
+  .image-top {position: relative;}
+  .nav-link {display: none;}
+  .navbar-menu {padding-top: 1.25rem; position: relative; left: 20%}
 }
