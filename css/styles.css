@@ -32,7 +32,7 @@ ul {
   display: block;
   min-height: 29rem;
   padding: 4.5rem 17% 0 16%;
-  text-align: center;
+  text-align: left;
 }
 .div-author-title {
   color: #27496d;
@@ -166,7 +166,7 @@ ul {
 .quote {
   color: #dae1e7;
   font-family: 'Saira Extra Condensed', sans-serif;
-  font-size: 3.125vw; /* = 300% = 3rem*/
+  font-size: 3.125vw; /* 3.125vw = 300% = 3rem*/
   font-weight: 700;
   letter-spacing: 0.2rem;
   margin: 0;
@@ -176,19 +176,32 @@ ul {
 .quote-author {
   color: #dae1e7;
   font-family: 'Saira Semi Condensed', sans-serif;
-  font-size: 1.05vw;
+  font-size: 1rem;
   margin: 0;
   z-index: 5;
 }
 
-@media screen and (max-width: 420px) {
-  .foot {display: none;}
-  .navbar-brand {margin-left: 5%}
-}
-
 @media screen and (max-width: 1200px) {
+  .foot {display: none;}
   .icon {display:inline;}
   .image-top {position: static;}
   .nav-link {display: none;}
-  .navbar-menu {padding-top: 1.25rem; margin-left: 7%; position: static; float: left;}
+  .navbar-menu {margin-left: 10%; padding-top: 1.25rem; position: static;}
+  .navbar-menu.responsive {position: relative;}
+  .navbar-menu.responsive .icon {position: absolute; left: 100%; top: 1.25rem;}
+  .navbar-menu.responsive .nav-link {background-color: #27496d; display: block; padding: 0 1rem;}
+}
+
+@media screen and (max-width: 640px) {
+  body {font-size: .75rem}
+  .bar-menu-icon {margin-top: 0.5rem; width: 40px;}
+  .div-author-name {font-size: 1rem;}
+  .div-author-title {font-size: 2rem;}
+  .navbar-brand {margin-top: 1.75rem; max-width: 9rem;}
+  .navbar-menu {margin-left: 6%;}
+  .navbar-menu.responsive {margin-top: 0.5rem; position: relative; right: 8.7rem;}
+  .navbar-menu.responsive .icon {position: absolute; right: 20%; top: 0.75rem;}
+  .navbar-menu.responsive .nav-link {background-color: #27496d; display: block; text-align: left;}
+  .quote {font-size: 1.5rem;}
+  .quote-author {font-size: .5rem;}
 }
