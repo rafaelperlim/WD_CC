@@ -70,7 +70,7 @@ ul {
   width: 35vw;
   margin-left: 16%;
   position: absolute;
-  right: 16%;
+  right: 16.25%;
   top: 70%;
   z-index: 1;
 }
@@ -85,10 +85,9 @@ ul {
 }
 
 .navbar-brand {
-  left: 16%;
+  margin-left: 15.5%;
   max-width: 16rem;
-  position: relative;
-  top: 1rem;
+  margin-top: 1rem;
 }
 /*
 .navbar-brand {
@@ -182,9 +181,14 @@ ul {
   z-index: 5;
 }
 
+@media screen and (max-width: 420px) {
+  .foot {display: none;}
+  .navbar-brand {margin-left: 5%}
+}
+
 @media screen and (max-width: 1200px) {
   .icon {display:inline;}
-  .image-top {position: relative;}
+  .image-top {position: static;}
   .nav-link {display: none;}
-  .navbar-menu {padding-top: 1.25rem; position: relative; left: 20%}
+  .navbar-menu {padding-top: 1.25rem; margin-left: 7%; position: static; float: left;}
 }
