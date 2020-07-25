@@ -2,83 +2,22 @@
 font-family: 'Saira Extra Condensed', sans-serif;
 font-family: 'Saira Semi Condensed', sans-serif;
 */
-body {
+
+html {
+  color: #dae1e7;
   font-family: 'Saira Semi Condensed', sans-serif;
+}
+
+body {
   font-size: 1.25rem;
   margin: 0;
 }
 
-footer {
-  background-color: #27496d;
-  color: #dae1e7;
-  font-size: 1rem;
-  line-height: 0.35;
-  max-height: 2.5rem;
-  overflow: hidden;
-  text-align: center;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-}
-
-.brand{
-  max-width: inherit;
-}
-
-.div-author {
-  background-color: #dae1e7;
-  display: block;
-  min-height: 29rem;
-  padding: 4.5rem 17% 0 16%;
-  text-align: left;
-}
-.div-author-title {
-  color: #27496d;
-  font-family: 'Saira Extra Condensed', sans-serif;
-  font-size: 3rem;
-}
-.div-author-name {
-  color: #00909e;
-  font-size: 2rem;
-}
-
-.div-bottom {
-  background-color: #515585;
-  display: flex;
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.div-top {
-  background-color: #515585;
-  display: block;
-  padding: 12rem 17% 5% 16%;
-}
-
-.icon {
-  display: none;
-}
-
-.image-bottom {
-  max-height: inherit;
-  max-width: inherit;
-}
-
-.image-top {
-  width: 35vw;
-  margin-left: 16%;
-  position: absolute;
-  right: 16.25%;
-  top: 70%;
-  z-index: 1;
-}
+/* NAVIGATION BAR */
 
 .navbar {
   background-color: #27496d;
   display: flex;
-  height: 5.5rem;
   position: fixed;
   width: 100%;
   z-index: 10;
@@ -88,31 +27,11 @@ ul {
   margin-left: 15.5%;
   max-width: 16rem;
   margin-top: 1rem;
-}
-/*
-.navbar-brand {
-  color: #00909e;
-  display: inline-block;
-  font-family: 'Saira Extra Condensed', sans-serif;
-  font-size: 5rem;
-  font-weight: 900;
-  line-height: 7.5rem;
-  max-height: 6rem;
-  overflow: hidden;
-  text-decoration: none;
-}
-.span-brand {
-  color: white;
-}
-*/
 
-.navbar-collapse {
-  -ms-flex-preferred-size: 100%;
-  flex-basis: 100%;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -ms-flex-align: center;
-  align-items: center;
+}
+
+.brand {
+  max-width: inherit;
 }
 
 .navbar-menu {
@@ -121,56 +40,34 @@ ul {
   right: 17%;
 }
 
-.navbar-nav {
-  display: flex;
-}
-
 .nav-link {
   color: #dae1e7;
-  font-size: 1.25rem;
-  font-weight: 400;
   margin-left: 1.5vw;
-  position: relative;
   text-decoration: none;
 }
 .nav-link:hover {
   color: #46b5d1;
 }
 
-.text-author {
-  color: #515585;
-  font-weight: 400;
-  z-index: 5;
+.icon {
+  display: none;
 }
 
-.text-link {
-  color: #46b5d1;
-  z-index: 5;
-}
-.text-link:hover {
-  color: #00909e;
-  font-weight: 500;
-  z-index: 5;
-}
 
-.text-top {
-  color: #dae1e7;
-  font-weight: 400;
-  max-width: 25rem;
-  padding-top: 7%;
-  z-index: 5;
-  /*position: absolute;
-  left: 35vh - 71% - 35rem*/
+/* TITLE */
+
+.div-top {
+  background-color: #515585;
+  display: block;
+  padding: 12rem 17% 5% 16%;
 }
 
 .quote {
   color: #dae1e7;
   font-family: 'Saira Extra Condensed', sans-serif;
   font-size: 3.125vw; /* 3.125vw = 300% = 3rem*/
-  font-weight: 700;
   letter-spacing: 0.2rem;
   margin: 0;
-  z-index: 5;
 }
 
 .quote-author {
@@ -178,30 +75,115 @@ ul {
   font-family: 'Saira Semi Condensed', sans-serif;
   font-size: 1rem;
   margin: 0;
-  z-index: 5;
+}
+
+.text-top {
+  color: #dae1e7;
+  font-weight: 400;
+  max-width: 25rem;
+  padding-top: 7%;
+  /*position: absolute;
+  left: 35vh - 71% - 35rem*/
+}
+
+.text-link {
+  color: #46b5d1;
+}
+.text-link:hover {
+  color: #00909e;
+  font-weight: 500;
+}
+
+.image-top {
+  width: 35vw;
+  margin-left: 16%;
+  position: absolute;
+  right: 16.25%;
+  top: 70%;
+}
+
+
+/* AUTHOR */
+
+.div-author {
+  background-color: #dae1e7;
+  min-height: 29rem;
+  display: block;
+  padding: 4.5rem 17% 0 16%;
+}
+
+.div-author-title {
+  color: #27496d;
+  font-family: 'Saira Extra Condensed', sans-serif;
+  font-size: 3rem;
+}
+
+.div-author-name {
+  color: #00909e;
+  font-size: 2rem;
+}
+
+.text-author {
+  color: #515585;
+  font-weight: 400;
+}
+
+
+/* BOTTOM */
+
+.div-bottom {
+  background-color: #515585;
+  display: flex;
+  max-width: 100%;
+  text-align: center;
+}
+
+.image-bottom {
+  max-width: inherit;
+}
+
+
+/* FOOTER */
+
+.foot {
+  background-color: #27496d;
+  font-size: 1rem;
+  line-height: 0.35;
+  max-height: 2.5rem;
+  overflow: hidden;
+  text-align: center;
+}
+
+
+/* MEDIA QUERIE BREAKPOINTS */
+
+@media screen and (min-width: 1765px) {
+  .div-bottom {padding: 0 17% 0 16%;}
 }
 
 @media screen and (max-width: 1200px) {
+  .div-bottom {padding: 0;}
   .foot {display: none;}
   .icon {display:inline;}
-  .image-top {position: static;}
+  .image-top {margin-left: 0; position: static;}
   .nav-link {display: none;}
   .navbar-menu {margin-left: 10%; padding-top: 1.25rem; position: static;}
-  .navbar-menu.responsive {position: relative;}
-  .navbar-menu.responsive .icon {position: absolute; left: 100%; top: 1.25rem;}
-  .navbar-menu.responsive .nav-link {background-color: #27496d; display: block; padding: 0 1rem;}
+  .navbar-menu .responsive {position: relative;}
+  .navbar-menu .responsive .icon {position: absolute; left: 100%; top: 1.25rem;}
+  .navbar-menu .responsive .nav-link {background-color: #27496d; display: block; padding: 0 1rem;}
 }
 
 @media screen and (max-width: 640px) {
-  body {font-size: .75rem}
+  body {font-size: .75rem; text-align: center;}
   .bar-menu-icon {margin-top: 0.5rem; width: 40px;}
   .div-author-name {font-size: 1rem;}
   .div-author-title {font-size: 2rem;}
+  .div-top {padding-top: 35%}
   .navbar-brand {margin-top: 1.75rem; max-width: 9rem;}
   .navbar-menu {margin-left: 6%;}
-  .navbar-menu.responsive {margin-top: 0.5rem; position: relative; right: 8.7rem;}
-  .navbar-menu.responsive .icon {position: absolute; right: 20%; top: 0.75rem;}
-  .navbar-menu.responsive .nav-link {background-color: #27496d; display: block; text-align: left;}
+  .navbar-menu .responsive {margin-top: 0.5rem; position: relative; right: 8.7rem;}
+  .navbar-menu .responsive .icon {position: absolute; right: 20%; top: 0.75rem;}
+  .navbar-menu .responsive .nav-link {background-color: #27496d; display: block; text-align: left;}
   .quote {font-size: 1.5rem;}
-  .quote-author {font-size: .5rem;}
+  .quote-author {font-size: .5rem; padding-bottom: 15%}
 }
