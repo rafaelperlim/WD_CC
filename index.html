@@ -25,7 +25,7 @@
           <a class="nav-link" href="#">Manuais</a>
           <a class="nav-link" href="#">Atualizações</a>
           <a class="nav-link" href="#">Sites&nbspúteis</a>
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <a href="javascript:void(0);" class="icon" onclick="respnsiveMenu()">
             <img src="bars-icon.png" class="bar-menu-icon" alt="bar menu" width="55px">
           </a>
       </div>
@@ -49,11 +49,11 @@
     </div>
 
     <footer class="foot">
-      <p>© 2006-2020<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspwww.cadcobol.com.br&nbsp&nbsp&nbsp&nbsp&nbsp&nbspAll Rights Reserved.</span></p>
+      <p>© 2006-2020<span class="foot-rights">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspwww.cadcobol.com.br&nbsp&nbsp&nbsp&nbsp&nbsp&nbspAll Rights Reserved.</span></p>
     </footer>
 
     <script>
-      function myFunction() {
+      function respnsiveMenu() {
         var x = document.getElementById("menu");
         if (x.className === "navbar-menu") {
           x.className += " responsive";
